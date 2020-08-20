@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+
+/* Barra de Moedas */
+#money ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
+    padding: 0;
+    background-color:#2F7F87;
+}
+#money li{
+    margin: 10px auto;
+    align-items: center;
+    list-style-type: none;
+    cursor: pointer;
+}
+li h1{
+    font-family: 'Baloo Tamma 2', cursive;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+li img{
+    display: flex;
+    margin: auto;
+    width: 40px;
+
+}
+
+/* */
+.tudo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 140px;
+    margin-left: 120px;
+    
+}
+.tudo form{
+    margin-left: 150px;
+}
+
+.tudo img{
+    width: 200px;
+}
