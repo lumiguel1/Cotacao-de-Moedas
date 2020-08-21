@@ -8,9 +8,11 @@
 
     <!-- Links -->
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
+
 <body>
     <!-- Barra de Navegação -->
     <nav class="navbar navbar-expand-md navbar navbar-dark bg-primary">
@@ -25,11 +27,11 @@
         </div>
     </nav>
 
-    <!-- Moedas -->
+    <!-- Lista de Moedas -->
     <form action="" id="money">
         <ul>
             <li>
-                <img src="./Imagens/bitcoin.png" alt="Bitcoin" onclick="validar()" id="1">
+                <img src="./Imagens/bitcoin.png" alt="Bitcoin" onclick="validar()" id='1'>
                 <h1>Bitcoin</h1>
             </li>
 
@@ -39,40 +41,45 @@
             </li>
 
             <li>
-                <img src="./Imagens/canadian-dollar.png" alt="Dollar Canadian" onclick="validar3()" id="3" >
+                <img src="./Imagens/canadian-dollar.png" alt="Dólar Canadense" onclick="validar3()" id="3">
                 <h1>Dólar Canadense</h1>
             </li>
 
             <li>
-                <img src="./Imagens/libra.png" alt="Dollar Canadian" onclick="validar4()" id="4">
+                <img src="./Imagens/libra.png" alt="Libra" onclick="validar4()" id="4">
                 <h1>Libra</h1>
             </li>
 
             <li>
-                <img src="./Imagens/euro.png" alt="Dollar Canadian" onclick="validar5()" id="5">
+                <img src="./Imagens/euro.png" alt="Euro" onclick="validar5()" id="5">
                 <h1>Euro</h1>
             </li>
 
             <li>
-                <img src="./Imagens/franco-suico.png" alt="Dollar Canadian" onclick="validar6()" id="6">
+                <img src="./Imagens/franco-suico.png" alt="Franco Suiço" onclick="validar6()" id="6">
                 <h1>Franco Suiço</h1>
             </li>
 
             <li>
-                <img src="./Imagens/yen.png" alt="Dollar Canadian" onclick="validar7()" id="7">
-                <h1>Yen</h1>
+                <img src="./Imagens/yen.png" alt="Iene" onclick="validar7()" id="7">
+                <h1>Iene</h1>
             </li>
 
             <li>
-                <img src="./Imagens/yuan.png" alt="Dollar Canadian" onclick="validar8()" id="8">
+                <img src="./Imagens/yuan.png" alt="Yuan" onclick="validar8()" id="8">
                 <h1>Yuan</h1>
             </li>
         </ul>
     </form>
 
-    <!-- Mostra a moeda clicada -->
-    <div id='imgMoeda' class="tudo">
-        <img src="./Imagens/logo.png" alt="Dollar Canadian"> 
+    <div class="tudo">
+        <!-- Imagem Inicial -->
+        <img src="./Imagens/logo.png" alt="" id='logo'>
+
+        <form action="">
+            <!-- Campo -->
+            Valor em Reais R$: <input type="text" disabled size="30" id="valor" value=" -   -   -   -   -   -   -   -   -   -   -   -">
+        </form>
     </div>
 
     <script src="funcao.js"></script>
