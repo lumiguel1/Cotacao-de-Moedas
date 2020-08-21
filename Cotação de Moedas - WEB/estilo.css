@@ -26,10 +26,9 @@ li img{
     display: flex;
     margin: auto;
     width: 40px;
-
 }
 
-/* Posição da moeda e do resultado da Cotação */
+/* Posição da Imagem e Input da Cotação */
 .tudo{
     width: 100%;
     display: flex;
