@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt_br">
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 
     <!-- Links -->
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./Styles/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
@@ -21,56 +21,54 @@
             <ul class="navbar-nav mr-auto"></ul>
             <ul class="navbar-nav">
                 <li>
-                    <a href="#" class="nav-link" style=color:white>Converter Moeda</a>
+                    <a href="conversao.html" class="nav-link" style=color:white>Converter Moeda</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <!-- Lista de Moedas -->
-    <form action="" id="money">
-        <ul>
+        <div id="money">
             <li>
                 <img src="./Imagens/bitcoin.png" alt="Bitcoin" onclick="validar()" id='1'>
                 <h1>Bitcoin</h1>
             </li>
 
             <li>
-                <img src="./Imagens/coin.png" alt="Euro" onclick="validar2()" id="2">
+                <img src="./Imagens/coin.png" alt="Euro" onclick="validar2()" id='2'>
                 <h1>Dólar</h1>
             </li>
 
             <li>
-                <img src="./Imagens/canadian-dollar.png" alt="Dólar Canadense" onclick="validar3()" id="3">
+                <img src="./Imagens/canadian-dollar.png" alt="Dólar Canadense" onclick="validar3()" id='3'>
                 <h1>Dólar Canadense</h1>
             </li>
 
             <li>
-                <img src="./Imagens/libra.png" alt="Libra" onclick="validar4()" id="4">
+                <img src="./Imagens/libra.png" alt="Libra" onclick="validar4()" id='4'>
                 <h1>Libra</h1>
             </li>
 
             <li>
-                <img src="./Imagens/euro.png" alt="Euro" onclick="validar5()" id="5">
+                <img src="./Imagens/euro.png" alt="Euro" onclick="validar5()" id='5'>
                 <h1>Euro</h1>
             </li>
 
             <li>
-                <img src="./Imagens/franco-suico.png" alt="Franco Suiço" onclick="validar6()" id="6">
+                <img src="./Imagens/franco-suico.png" alt="Franco Suiço" onclick="validar6()" id='6'>
                 <h1>Franco Suiço</h1>
             </li>
 
-            <li>
-                <img src="./Imagens/yen.png" alt="Iene" onclick="validar7()" id="7">
+           <li>
+                <img src="./Imagens/yen.png" alt="Iene" onclick="validar7()" id='7'>
                 <h1>Iene</h1>
             </li>
 
             <li>
-                <img src="./Imagens/yuan.png" alt="Yuan" onclick="validar8()" id="8">
+                <img src="./Imagens/yuan.png" alt="Yuan" onclick="validar8()" id='8'>
                 <h1>Yuan</h1>
             </li>
-        </ul>
-    </form>
+        </div>
 
     <div class="tudo">
         <!-- Imagem Inicial -->
@@ -82,7 +80,7 @@
         </form>
     </div>
 
-    <script src="funcao.js"></script>
+    <script src="./Scripts/index.js"></script>
 </body>
 
 </html>

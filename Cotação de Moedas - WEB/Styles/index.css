@@ -1,0 +1,49 @@
+body{
+    height: auto;
+    margin: 0;
+}
+
+/* Barra de Moedas */
+#money{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: auto;
+    grid-gap: 0px;
+    padding: 0;
+    background-color:#2F7F87;
+}
+#money li{
+    margin: 20px auto ;
+    align-items: center;
+    list-style-type: none;
+    cursor: pointer;
+    
+}
+li h1{
+    font-family: 'Baloo Tamma 2', cursive;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+li img{
+    display: flex;
+    margin: auto;
+    width: 40px;
+}
+
+/* Posição da Imagem e Input da Cotação */
+.tudo{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+    
+}
+.tudo form{
+    margin-left: 75px;
+}
+
+.tudo img{
+    width: 200px;
+}
