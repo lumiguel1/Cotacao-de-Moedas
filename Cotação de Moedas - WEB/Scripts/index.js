@@ -23,7 +23,7 @@ async function validar2() {
     document.getElementById('logo').src = moeda;
 
     // Mostra a cotação.
-    var url = 'https://economia.awesomeapi.com.br/all/USD-BRL '
+    var url = 'https://economia.awesomeapi.com.br/all/USD-BRL'
     var campo = document.getElementById('valor')
 
     // Faz a Request da API.

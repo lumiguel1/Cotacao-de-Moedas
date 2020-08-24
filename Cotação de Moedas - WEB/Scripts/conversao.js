@@ -9,19 +9,31 @@ function enviar(){
         document.getElementById('logo').src = "./Imagens/logo.png"
     }
 }
+function tente(){
+    document.getElementById('funfa').style.backgroundColor="#000000"
+    document.getElementById('On2').style.display="flex";
+    document.getElementById('On').style.display="none";
+}
+function tente2(){
+    document.getElementById('funfa').style.backgroundColor="#f2f2f2"
+    document.getElementById('On').style.display="flex";
+    document.getElementById('On2').style.display="none";
+}
+function linkCoin(){
+    var url = 'https://economia.awesomeapi.com.br/all'
+    return url
+}
 
 async function validar(){
-    // Troca a logo pela Imagem da moeda
+    // Troca a logo pela Imagem da moeda  
     var moeda = document.getElementById('1').src;
     document.getElementById('logo').src = moeda;
-
     // Converção.
-    var url = 'https://economia.awesomeapi.com.br/all/BTC-BRL'
     var campo = document.getElementById('valor')
     var real = document.getElementById('valor1').value
 
     // Faz a Request da API.
-    await fetch(url, { method: 'GET' })
+    await fetch(linkCoin(), { method: 'GET' })
         .then(function (response) {
             response.json()
                 .then(function (dado) {
@@ -35,12 +47,11 @@ async function validar2(){
     document.getElementById('logo').src = moeda;
 
     // Converção.
-    var url = 'https://economia.awesomeapi.com.br/all/USD-BRL'
     var campo = document.getElementById('valor')
     var real = document.getElementById('valor1').value
 
     // Faz a Request da API.
-    await fetch(url, { method: 'GET' })
+    await fetch(linkCoin(), { method: 'GET' })
         .then(function (response) {
             response.json()
                 .then(function (dado) {
@@ -54,12 +65,11 @@ async function validar3(){
     document.getElementById('logo').src = moeda;
 
     // Converção.
-    var url = 'https://economia.awesomeapi.com.br/all/CAD-BRL'
     var campo = document.getElementById('valor')
     var real = document.getElementById('valor1').value
 
     // Faz a Request da API.
-    await fetch(url, { method: 'GET' })
+    await fetch(linkCoin(), { method: 'GET' })
         .then(function (response) {
             response.json()
                 .then(function (dado) {
@@ -73,12 +83,11 @@ async function validar4(){
     document.getElementById('logo').src = moeda;
 
     // Converção.
-    var url = 'https://economia.awesomeapi.com.br/all/GBP-BRL'
     var campo = document.getElementById('valor')
     var real = document.getElementById('valor1').value
 
     // Faz a Request da API.
-    await fetch(url, { method: 'GET' })
+    await fetch(linkCoin(), { method: 'GET' })
         .then(function (response) {
             response.json()
                 .then(function (dado) {
@@ -92,12 +101,11 @@ async function validar5(){
     document.getElementById('logo').src = moeda;
 
     // Converção.
-    var url = 'https://economia.awesomeapi.com.br/all/EUR-BRL'
     var campo = document.getElementById('valor')
     var real = document.getElementById('valor1').value
 
     // Faz a Request da API.
-    await fetch(url, { method: 'GET' })
+    await fetch(linkCoin(), { method: 'GET' })
         .then(function (response) {
             response.json()
                 .then(function (dado) {
@@ -111,12 +119,11 @@ async function validar6(){
     document.getElementById('logo').src = moeda;
 
     // Converção.
-    var url = 'https://economia.awesomeapi.com.br/all/CHF-BRL'
     var campo = document.getElementById('valor')
     var real = document.getElementById('valor1').value
 
     // Faz a Request da API.
-    await fetch(url, { method: 'GET' })
+    await fetch(linkCoin(), { method: 'GET' })
         .then(function (response) {
             response.json()
                 .then(function (dado) {
@@ -130,12 +137,11 @@ async function validar7(){
     document.getElementById('logo').src = moeda;
 
     // Converção.
-    var url = 'https://economia.awesomeapi.com.br/all/JPY-BRL'
     var campo = document.getElementById('valor')
     var real = document.getElementById('valor1').value
 
     // Faz a Request da API.
-    await fetch(url, { method: 'GET' })
+    await fetch(linkCoin(), { method: 'GET' })
         .then(function (response) {
             response.json()
                 .then(function (dado) {
@@ -149,12 +155,11 @@ async function validar8(){
     document.getElementById('logo').src = moeda;
 
     // Converção.
-    var url = 'https://economia.awesomeapi.com.br/all/CNY-BRL'
     var campo = document.getElementById('valor')
     var real = document.getElementById('valor1').value
 
     // Faz a Request da API.
-    await fetch(url, { method: 'GET' })
+    await fetch(linkCoin(), { method: 'GET' })
         .then(function (response) {
             response.json()
                 .then(function (dado) {

@@ -2,23 +2,59 @@ body{
     height: auto;
     margin: 0;
 }
+a, h1, form, button{
+    font-family: 'Roboto', sans-serif;
+}
+#funfa{
+    background-color: #f2f2f2;
+}
+.navigation{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 
+    background-color: #6600ff;
+    
+    margin-left: 10%;
+    margin-right: 10%;
+
+    border-radius: 0px 0px 15px 15px;
+}
+#funfa .navigation a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-left: 10px;
+}
+.navigation h1{
+    margin: 20px auto;
+
+    color: white;
+}
 /* Barra de Moedas */
 #money{
     display: none;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: auto;
-    grid-gap: 0px;
+    grid-gap: 20px;
     padding: 0;
-    background-color:#2F7F87;
-    
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 #money li{
-    margin: 20px auto ;
+    margin: 20px auto;
     align-items: center;
     list-style-type: none;
-    cursor: pointer;
-    
+    cursor: pointer;  
+}
+.teste{
+    border-radius: 15px 15px 15px 15px;
+    background-color: #6600ff;
+    transition: 450ms;
+}
+.teste:hover{
+    background-color: #3d0099;
 }
 li h1{
     font-family: 'Baloo Tamma 2', cursive;
@@ -27,6 +63,8 @@ li h1{
     text-align: center;
 }
 li img{
+    border: 10px;
+    border-color: black;
     display: flex;
     margin: auto;
     width: 40px;
@@ -47,4 +85,19 @@ li img{
 
 .tudo img{
     width: 200px;
+}
+.content-light{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#On2{
+    display:none;
+}
+#On{
+}
+
+.bright{
+    width: 70px;
+    cursor: pointer;
 }
